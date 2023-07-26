@@ -1,16 +1,16 @@
+// App.jsx
+import React from 'react';
+import { DivContainer } from './Contacts/Styles/DivStyles';
+import Contacts from './Contacts/Contacts';
+import { Toaster } from 'react-hot-toast';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <section>
+      <DivContainer>
+        <Contacts />
+      </DivContainer>
+      <Toaster /> {/* Agrega el componente Toaster */}
+    </section>
   );
 };
